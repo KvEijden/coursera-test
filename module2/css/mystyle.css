@@ -1,0 +1,71 @@
+
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+
+
+div.menu-item {
+  background-color: gray;
+  border: 1px solid black;
+  margin: 40px;
+  padding: 0px;
+}
+
+p.item-title {
+  float: right;
+  width: 70%;
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+  
+  margin: 0px 0px 0px 0px;
+}
+
+p.item-text {
+  color: white;
+  clear: right;
+  padding: 5px;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .menu-lg-4 {
+    float: left;
+  }
+  .menu-lg-4 {
+    width: 33.33%;
+  }
+}
+
+/********** Medium devices (tablets) only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .menu-md-6, .menu-md-12 {
+    float: left;
+  }
+  .menu-md-6 {
+    width: 50%;
+  }
+  .menu-md-12{
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .menu-sm-12 {
+    float: left;
+  }
+  .menu-sm-12{
+    width: 100%;
+  }
+}
