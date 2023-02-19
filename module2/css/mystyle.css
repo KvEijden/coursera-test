@@ -4,23 +4,28 @@
 * {
   box-sizing: border-box;
 }
+
 h1 {
   margin-bottom: 15px;
   text-align: center;
 }
 
+/* overriding local browser settings */
+body {
+  margin: 0px;
+}
 
-
-div.menu-item {
+.menu-item {
   background-color: gray;
-  border: 1px solid black;
-  margin: 40px;
+  border: 1px solid black
   padding: 0px;
 }
 
-p.item-title {
+/* name of the dish */
+
+.item-title {
   float: right;
-  width: 70%;
+  width: 150px;
   text-align: center;
   border: 1px solid black;
   padding: 5px;
@@ -28,17 +33,29 @@ p.item-title {
   margin: 0px 0px 0px 0px;
 }
 
-p.item-text {
+
+/* description of the dish */
+
+.item-text {
   color: white;
   clear: right;
   padding: 5px;
+  margin: 0px;
 }
 
 /* Simple Responsive Framework. */
 .row {
-  width: 100%;
+  margin: 0px 10px 0px 10px;
 }
+
+/* assuring equal horizontal distribution of menu items */
+.row .menu-item {
+  margin: 10px 10px 10px 10px;
+}
+
+
 /********** Large devices only **********/
+
 @media (min-width: 992px) {
   .menu-lg-4 {
     float: left;
@@ -56,6 +73,9 @@ p.item-text {
   .menu-md-6 {
     width: 50%;
   }
+  menu-md-6 .item-title {
+    width: 150px;
+  }
   .menu-md-12{
     width: 100%;
   }
@@ -69,3 +89,5 @@ p.item-text {
     width: 100%;
   }
 }
+
+
